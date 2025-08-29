@@ -1,0 +1,100 @@
+.navbar {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.navbar .btn {
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+/* nav btn clr */
+.navbar .btn:hover {
+  background-color: #0f54bb;  
+  color: #fff;
+}
+
+/* title name */
+h3{
+    color:#707070 !important;
+    text-shadow: 1px 1px 5px rgb(233, 232, 232);
+}
+
+/* -------------------------------- */
+
+/* Make the main container full screen height */
+/* --bug-- */
+/* .container-fluid {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #e6ecf3);
+} */
+
+/* Card design */
+.card {
+  width: 100%;
+  max-width: 1000px; 
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  background: #ffffff !important;
+}
+
+/* component bg color */
+#myBgClr{
+    /* background-color: rgb(127, 219, 255) !important; */
+}
+
+/* ------------------------------ */
+
+/* media query--- */
+
+@media (max-width: 768px) {
+  .navbar .btn {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+
+.report-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: #f9fafc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.report-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.report-table th, 
+.report-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.report-table th {
+  background: #007bff;
+  color: white;
+}
+
