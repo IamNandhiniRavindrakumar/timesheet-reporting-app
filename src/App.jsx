@@ -19,12 +19,7 @@ useEffect(() => {
   const email = localStorage.getItem("currentUser");
   setUserEmail(email);
 
-  let data = JSON.parse(localStorage.getItem("timeSheetEntries") || {
-  "guest": [
-    { "date": "2025-08-01", "project": "Website", "task": "Fix bug", "hours": 5, },
-    { "date": "2025-08-02", "project": "UI Design", "task": "Write docs", "hours": 6, }
-  ]
-}
+  let data = JSON.parse(localStorage.getItem("timeSheetEntries") || "{}"
 );
 
   // If no entries exist, create 50 fake entries
